@@ -15,7 +15,7 @@ function Header() {
         </div>
         <nav className="flex items-center justify-between py-4 px-6 border-b">
           <div className="flex items-center">
-            <img src='https://img.icons8.com/?size=100&id=pOa8st0SGd5C&format=png&color=000000' alt="Apparel Store Logo" className="h-10 w-10"/>
+            <img src='https://img.icons8.com/?size=100&id=pOa8st0SGd5C&format=png&color=000000' alt="Outfit Orbit" className="h-10 w-10"/>
             <span className="ml-2 text-lg font-medium text-gray-800">Outfit Orbit</span>
           </div>
           <div className="hidden md:flex space-x-8 text-gray-600">
@@ -38,14 +38,20 @@ function Header() {
               <span className="ml-1">Log In</span>
             </a>
             <a href="#" className="flex items-center hover:text-black">
-              <i className="fas fa-shopping-cart"></i>
-              <span className="ml-1">0</span>
-            </a>
+              <img
+                src="https://img.icons8.com/?size=100&id=G7PELQpF8j6g&format=png&color=000000"
+                alt="Shopping Cart"
+                className="w-6 h-6"
+              />
+  <span className="ml-1"></span>
+</a>
           </div>
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button onClick={toggleSidebar} className="text-gray-600 hover:text-black">
-              <i className="fas fa-bars"></i>
+              <img src="https://img.icons8.com/?size=100&id=PpSBa7iaIak3&format=png&color=000000" alt="Hamburger" 
+              className='h-6 w-6'
+              />
             </button>
           </div>
         </nav>
@@ -54,6 +60,13 @@ function Header() {
           <div className="md:hidden fixed inset-0 bg-white z-50 shadow-lg p-4">
             <div className="flex justify-between items-center">
               <h2 className="text-lg font-semibold">Menu </h2>
+              <div className="relative">
+                <input 
+                  type="text" 
+                  placeholder="Search for products" 
+                  className="border rounded-2xl py-1 px-2 text-gray-600 text-center focus:outline-slate-400"
+                />
+              </div>
               <button onClick={toggleSidebar} className="text-gray-600 hover:text-black">
                 <i className="fas fa-times"></i>
               </button>
@@ -63,13 +76,6 @@ function Header() {
               <a href="#" className="hover:text-black">WOMEN</a>
               <a href="#" className="hover:text-black">KIDS</a>
               <a href="#" className="hover:text-black">STUDIO</a>
-              <div className="relative">
-                <input 
-                  type="text" 
-                  placeholder="Search for products" 
-                  className="border rounded-2xl py-1 px-2 text-gray-600 text-center focus:outline-slate-400"
-                />
-              </div>
             </div>
           </div>
         )}
