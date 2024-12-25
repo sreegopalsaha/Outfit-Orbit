@@ -7,7 +7,7 @@ function Footer() {
       {/* Top Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* About Section */}
-        <div>
+        <div className='text-center'>
           <h3 className="text-lg font-semibold mb-3">About Outfit Orbit</h3>
           <p className="text-sm">
             Outfit Orbit is your one-stop destination for the latest trends in apparel. From casual wear to formal attire, we've got you covered with the best styles at affordable prices.
@@ -15,7 +15,7 @@ function Footer() {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className='text-center'>
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li><a href="/shop" className="hover:underline">Shop</a></li>
@@ -26,13 +26,13 @@ function Footer() {
         </div>
 
         {/* Contact Information */}
-        <div>
+        <div className='text-center'>
           <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
           <p className="text-sm">
-            Email: <a href="mailto:support@outfitorbit.com" className="hover:underline">support@outfitorbit.com</a>
+            Email: <a href="yousufmallik604@gmail.com" className="hover:underline">yousufmallik604@gmail.com</a>
           </p>
           <p className="text-sm">Phone: +1 123-456-7890</p>
-          <p className="text-sm">Address: 123 Orbit Lane, Fashion City</p>
+          <p className="text-sm">Sutahata,Haldia</p>
         </div>
       </div>
 
