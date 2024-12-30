@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link, NavLink} from 'react-router-dom';
+import Cart from '../cart/Cart';
 
 function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -33,11 +35,11 @@ function Header() {
             </div>
           </div>
           <div className="flex items-center space-x-4 text-gray-600">
-            <a href="#" className="flex items-center hover:text-black">
+            <a href="LoginPage" className="flex items-center hover:text-black">
               <i className="fas fa-user"></i>
               <span className="ml-1">Log In</span>
             </a>
-            <a href="#" className="flex items-center hover:text-black">
+            <a href="Cart" className="flex items-center hover:text-black">
               <img
                 src="https://img.icons8.com/?size=100&id=G7PELQpF8j6g&format=png&color=000000"
                 alt="Shopping Cart"

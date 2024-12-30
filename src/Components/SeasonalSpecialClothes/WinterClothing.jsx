@@ -1,9 +1,12 @@
 import React from 'react';
+import winter1 from '../../assets/Images/Winter1.png'
+import winter2 from '../../assets/Images/winter2.png'
+import winter3 from '../../assets/Images/winter3.png'
 
 const winterClothingItems = [
-    { id: 1, name: "Winter Jacket", image: "https://via.placeholder.com/300x200", link: "#item1" },
-    { id: 2, name: "Knitted Sweater", image: "https://via.placeholder.com/300x200", link: "#item2" },
-    { id: 3, name: "Thermal Pants", image: "https://via.placeholder.com/300x200", link: "#item3" },
+    { id: 1, name: "Bomber Jacket", image: winter1, link: "#link1"},
+    { id: 2, name: "Fur Jacket", image: winter2, link: "#link2" },
+    { id: 3, name: "Half Puller Sweater", image: winter3, link: "#link3",}
 ];
 
 const WinterClothing = () => {

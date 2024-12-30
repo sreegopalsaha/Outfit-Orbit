@@ -3,6 +3,9 @@ import CategoryCards from "../CatagoryCards/CatagoryCards";
 import TrendingItems from "../TrendingItems/TrendingItems";
 import WinterClothing from "../SeasonalSpecialClothes/WinterClothing";
 import OfferBanner from "../OfferBanner/OfferBanner";
+import NewYearSaleBanner from "../NewYearSaleBanner/NewYearSaleBanner";
+import DownloadAppBanner from "../DownloadAppBanner/DownloadAppBanner";
+import Studio from "../Studio/Studio";
 import gozzayz from "../../assets/Images/gozzayz.png";
 import vogue from "../../assets/Images/vogue1.png";
 import Kids from "../../assets/Images/Kids.png";
@@ -20,7 +23,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 7 seconds
+    }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
@@ -40,10 +43,12 @@ const Home = () => {
       </div>
     </div>
       <CategoryCards/>
+      <NewYearSaleBanner/>
       <TrendingItems/>
-      <OfferBanner/>
+      {/* <OfferBanner/> */}
+      <Studio/>
       <WinterClothing/>
-      
+      <DownloadAppBanner/>
     </>
   );
 };
