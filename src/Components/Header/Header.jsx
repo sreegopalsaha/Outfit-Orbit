@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink} from 'react-router-dom';
 import Cart from '../cart/Cart';
 
-function Header() {
+export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -16,15 +16,15 @@ function Header() {
           Get 15% OFF - Use Coupon Code WINTER15
         </div>
         <nav className="flex items-center justify-between py-4 px-6 border-b">
-          <div className="flex items-center">
+          <Link className="flex items-center">
             <img src='https://img.icons8.com/?size=100&id=pOa8st0SGd5C&format=png&color=000000' alt="Outfit Orbit" className="h-10 w-10"/>
             <span className="ml-2 text-lg font-medium text-gray-800">Outfit Orbit</span>
-          </div>
+          </Link>
           <div className="hidden md:flex space-x-8 text-gray-600">
-            <a href="#" className="hover:text-black">MEN</a>
-            <a href="#" className="hover:text-black">WOMEN</a>
-            <a href="#" className="hover:text-black">KIDS</a>
-            <a href="#" className="hover:text-black">STUDIO</a>
+            <Link to="#" className="hover:text-black">MEN</Link>
+            <Link to="#" className="hover:text-black">WOMEN</Link>
+            <Link to="#" className="hover:text-black">KIDS</Link>
+            <Link to="#" className="hover:text-black">STUDIO</Link>
             {/* Search Bar */}
             <div className="relative">
               <input 
@@ -35,26 +35,28 @@ function Header() {
             </div>
           </div>
           <div className="flex items-center space-x-4 text-gray-600">
-            <a href="LoginPage" className="flex items-center hover:text-black">
+            <Link to="LoginPage" className="flex items-center hover:text-black">
               <i className="fas fa-user"></i>
               <span className="ml-1">Log In</span>
-            </a>
-            <a href="Cart" className="flex items-center hover:text-black">
+            </Link>
+            <Link to="Cart" className="flex items-center hover:text-black">
               <img
                 src="https://img.icons8.com/?size=100&id=G7PELQpF8j6g&format=png&color=000000"
                 alt="Shopping Cart"
                 className="w-6 h-6"
               />
   <span className="ml-1"></span>
-</a>
+</Link>
           </div>
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
+            <Link>
             <button onClick={toggleSidebar} className="text-gray-600 hover:text-black">
               <img src="https://img.icons8.com/?size=100&id=PpSBa7iaIak3&format=png&color=000000" alt="Hamburger" 
               className='h-6 w-6'
               />
             </button>
+            </Link>
           </div>
         </nav>
         {/* Mobile Sidebar */}
@@ -85,5 +87,3 @@ function Header() {
     </>
   );
 }
-
-export default Header;
