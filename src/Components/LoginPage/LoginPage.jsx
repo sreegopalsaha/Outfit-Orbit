@@ -12,8 +12,8 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white rounded-lg shadow-lg p-8 w-96">
+    <div className="flex items-center justify-center min-h-screen bg-white">
+      <div className="bg-gray-100 rounded-lg shadow-lg p-8 w-96">
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Login to Outfit Orbit</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
