@@ -1,6 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 /* body {
   @apply bg-gradient-to-b from-white via-[#f0e1ce] to-[#9c775d] min-h-screen;
+} */
+
+@keyframes slideInOut {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide {
+  animation: slideInOut 6s linear infinite;
+}
+
+
+/* @keyframes glow-pulse {
+  0%, 100% {
+    text-shadow: 0 0 5px #34d399, 0 0 10px #34d399, 0 0 20px #34d399, 0 0 40px #10b981;
+  }
+  50% {
+    text-shadow: 0 0 10px #6ee7b7, 0 0 20px #6ee7b7, 0 0 30px #34d399, 0 0 50px #10b981;
+  }
+}
+.animate-glow {
+  animation: glow-pulse 2s infinite;
 } */
