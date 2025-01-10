@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink} from 'react-router-dom';
 import Cart from '../cart/Cart';
+import OfferRelatedText from '../OfferRelatedText/OfferRelatedText';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -11,10 +12,8 @@ export default function Header() {
 
   return (
     <>
+      <OfferRelatedText/>
       <header>
-        <div className="bg-gray-100 text-center py-2 text-sm text-gray-600">
-          Get 15% OFF - Use Coupon Code WINTER15
-        </div>
         <nav className="flex items-center justify-between py-4 px-6 border-b">
           <Link className="flex items-center">
             <img src='https://img.icons8.com/?size=100&id=pOa8st0SGd5C&format=png&color=000000' alt="Outfit Orbit" className="h-10 w-10"/>
@@ -25,6 +24,14 @@ export default function Header() {
             <Link to="#" className="hover:text-black">WOMEN</Link>
             <Link to="#" className="hover:text-black">KIDS</Link>
             <Link to="#" className="hover:text-black">STUDIO</Link>
+            <div className="hidden md:flex space-x-12">
+            <Link 
+            to="#" 
+            className="bg-gradient-to-r from-green-400 via-teal-500 to-blue-400 text-transparent bg-clip-text font-semibold animate-glow hover:scale-110 transition-transform duration-300"
+            >
+            COLLEGE UNIFORMS
+            </Link>
+            </div>
             {/* Search Bar */}
             <div className="relative">
               <input 
@@ -76,10 +83,16 @@ export default function Header() {
               </button>
             </div>
             <div className="flex flex-col space-y-2 mt-4 text-gray-600">
-              <a href="#" className="hover:text-black">MEN</a>
-              <a href="#" className="hover:text-black">WOMEN</a>
-              <a href="#" className="hover:text-black">KIDS</a>
-              <a href="#" className="hover:text-black">STUDIO</a>
+              <Link to="#" className="hover:text-black">MEN</Link>
+              <Link to="#" className="hover:text-black">WOMEN</Link>
+              <Link to="#" className="hover:text-black">KIDS</Link>
+              <Link to="#" className="hover:text-black">STUDIO</Link>
+              <Link 
+              to="#" 
+              className="bg-gradient-to-r from-green-400 via-teal-500 to-blue-400 text-transparent bg-clip-text font-semibold animate-glow hover:scale-110 transition-transform duration-300"
+              >
+              COLLEGE UNIFORMS
+              </Link>
             </div>
           </div>
         )}
