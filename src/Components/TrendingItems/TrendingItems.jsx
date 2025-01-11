@@ -16,9 +16,9 @@ const trendingItems = [
 
 const TrendingItems = () => {
     return (
-        <div className="max-w-6xl mx-auto text-center p-4">
+        <div className="text-center p-4 bg-gradient-to-b from-white via-brown- to-white ">
             <h1 className="text-3xl font-bold mb-6">Trending Items</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-10 ml-20 mr-20 shadow-transparent">
                 {trendingItems.map(item => (
                     <a
                         key={item.id}
