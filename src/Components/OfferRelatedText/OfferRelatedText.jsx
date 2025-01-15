@@ -20,9 +20,9 @@ const OfferRelatedText = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden h-7 flex justify-center items-center bg-gray-100">
+    <div className="relative overflow-hidden h-7 flex justify-center items-center bg-[#4F0341]">
       <div
-        className="absolute text-sm text-red-700 animate-slide"
+        className="absolute text-sm text-white animate-slide"
         key={currentSentence} // Key ensures re-render on sentence change
       >
         {sentences[currentSentence]}
