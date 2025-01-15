@@ -9,12 +9,18 @@ import Studio from "../Studio/Studio";
 import gozzayz from "../../assets/Images/gozzayz.png";
 import vogue from "../../assets/Images/vogue1.png";
 import Kids from "../../assets/Images/Kids.png";
+import Banner1 from "../../assets/Images/banner1.png";
+import vuee from "../../assets/Images/Untitled-1.png";
+import Banner2 from "../../assets/Images/banner3.png";
 
 const images = [
-  { src: gozzayz, alt: "Stylish Outfit - Westworld" },
-  { src: vogue, alt: 'Winter Outfit' },
+  // { src: gozzayz, alt: "Stylish Outfit - Westworld" },
+  { src: vuee, alt: 'Winter Outfits' },
+  // { src: vogue, alt: 'Winter Outfit' },
+  { src: Banner1, alt: 'Winter Outfit' },
   // { src: MenTrend, alt: 'Winter Outfit' },
-  { src: Kids, alt: 'Winter Outfit' },
+  { src: Banner2, alt: 'Winter Outfit' },
+  // { src: Kids, alt: 'Winter Outfit' },
 ];
 
 const Home = () => {
@@ -36,11 +42,11 @@ const Home = () => {
         alt={images[currentIndex].alt}
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
+      {/* <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
         <button className="px-6 py-2 text-lg font-semibold text-white bg-red-600 rounded hover:bg-red-500 transition duration-300">
           Explore More
         </button>
-      </div>
+      </div> */}
     </div>
       <CategoryCards/>
       <NewYearSaleBanner/>
