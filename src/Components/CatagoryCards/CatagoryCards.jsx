@@ -20,7 +20,7 @@ const CategoryCards = () => {
                     <a
                         key={category.id}
                         href={category.link}
-                        className="bg-white border border-gray-300 rounded-lg p-4 shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+                        className="bg-gradient-to-br from-white via-gray-100 to-white border-gray-300 rounded-lg p-4 shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
                     >
                         {category.name}
                     </a>
