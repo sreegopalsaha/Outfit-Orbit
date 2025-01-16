@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Link, NavLink} from 'react-router-dom';
+import Headroom from "react-headroom";
 import Cart from '../cart/Cart';
 import OfferRelatedText from '../OfferRelatedText/OfferRelatedText';
 
 export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -13,7 +15,8 @@ export default function Header() {
   return (
     <>
       <OfferRelatedText/>
-      <header>
+      <Headroom>
+      <header className="bg-white shadow-md">
         <nav className="flex items-center justify-between py-4 px-6 border-b">
           <Link className="flex items-center">
             <img src='https://img.icons8.com/?size=100&id=pOa8st0SGd5C&format=png&color=000000' alt="Outfit Orbit" className="h-10 w-10"/>
@@ -97,6 +100,7 @@ export default function Header() {
           </div>
         )}
       </header>
+      </Headroom>
     </>
   );
 }
