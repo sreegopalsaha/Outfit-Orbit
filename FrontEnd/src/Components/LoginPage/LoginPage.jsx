@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import LoginUiImg from "../../assets/Images/loginUiImg.jpeg";
 
 const LoginPage = () => {
@@ -15,7 +15,7 @@ const LoginPage = () => {
 
   return (
     <div className="relative min-h-screen">
-      <h1 className='font-playfair absolute inset-x-0 top-12 left-60 text-center text-9xl font-light z-0'>
+      <h1 className='font-playfair absolute inset-x-0 top-12 left-60 text-center text-9xl cursor-default font-light z-0'>
           OUTFIT ORBIT
       </h1>
       {/* <h1 className='font-playfair absolute inset-x-0 top-44 right-36 text-center text-9xl font-light z-0'>
@@ -43,7 +43,6 @@ const LoginPage = () => {
         onChange={(e) => setNumber(e.target.value)}
         required
         className="appearance-none border-b border-black w-1/2 py-2 px-2 leading-tight focus:outline-none focus:ring-0 focus:border-[#6495ED] bg-[#d1e7ae]"
-        // placeholder="Enter your mobile number"
       />
     </div>
     <div className="mb-6">
@@ -57,7 +56,6 @@ const LoginPage = () => {
         onChange={(e) => setPassword(e.target.value)}
         required
         className="appearance-none border-b border-black w-1/2 py-2 px-2 leading-tight focus:outline-none focus:ring-0 focus:border-[#6495ED] bg-[#d1e7ae]"
-        // placeholder="********"
       />
     </div>
     <div className="flex items-center justify-between">
@@ -70,7 +68,7 @@ const LoginPage = () => {
     </div>
     <p className="text-center text-gray-600 text-sm mt-7">
       Don't have an account?{' '}
-      <Link to="/register" className="text-purple-600 hover:text-purple-500 font-semibold">
+      <Link to="/sign-up" className="text-purple-600 hover:text-purple-500 font-semibold">
         Sign Up
       </Link>
     </p>
@@ -79,6 +77,7 @@ const LoginPage = () => {
 <div className="bg-[#d1e7ae] w-full"></div>
 </div>
 </div>
+
   );
 };
 

@@ -27,7 +27,7 @@ const TrendingItems = () => {
     return (
         <div className="text-center p-4 bg-gradient-to-b from-white via-brown- to-white ">
             <h1 className="text-3xl font-bold mb-6">Trending Items</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-6 gap-6 ml-20 mr-20 shadow-transparent">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 lg:grid-cols-6 gap-0 ml-20 mr-20 shadow-transparent">
                 {trendingItems.map(item => (
                     <Link
                         key={item.id}

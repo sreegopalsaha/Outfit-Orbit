@@ -10,12 +10,12 @@ import gozzayz from "../../assets/Images/gozzayz.png";
 import vogue from "../../assets/Images/vogue1.png";
 import Kids from "../../assets/Images/Kids.png";
 import Banner1 from "../../assets/Images/banner1.png";
-import vuee from "../../assets/Images/Untitled-1.png";
+// import vuee from "../../assets/Images/Untitled-1.png";
 import Banner2 from "../../assets/Images/banner3.png";
 
 const images = [
   // { src: gozzayz, alt: "Stylish Outfit - Westworld" },
-  { src: vuee, alt: 'Winter Outfits' },
+  // { src: vuee, alt: 'Winter Outfits' },
   // { src: vogue, alt: 'Winter Outfit' },
   { src: Banner1, alt: 'Winter Outfit' },
   // { src: MenTrend, alt: 'Winter Outfit' },
@@ -29,7 +29,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+    }, 5000); // Change image every 3 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);

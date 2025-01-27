@@ -6,6 +6,7 @@ import Layout from './Layout.jsx'
 import Home from './Components/Home/Home.jsx'
 import Cart from './Components/cart/Cart.jsx'
 import LoginPage from './Components/LoginPage/LoginPage.jsx'
+import SignUpPage from './Components/Pages/SignUpPage.jsx'
 
 const router = createBrowserRouter([
     {
@@ -21,8 +22,12 @@ const router = createBrowserRouter([
         element : <Cart/>
       },
       {
-        path: 'LoginPage',
+        path: 'login',
         element : <LoginPage/>
+      },
+      {
+        path: 'sign-up',
+        element : <SignUpPage/>
       },
     ]
     }
