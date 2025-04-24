@@ -14,12 +14,12 @@ import Banner1 from "../../assets/Images/banner1.png";
 import Banner2 from "../../assets/Images/banner3.png";
 
 const images = [
-  // { src: gozzayz, alt: "Stylish Outfit - Westworld" },
+  { src: gozzayz, alt: "Stylish Outfit - Westworld" },
   // { src: vuee, alt: 'Winter Outfits' },
-  // { src: vogue, alt: 'Winter Outfit' },
-  { src: Banner1, alt: 'Winter Outfit' },
+  { src: vogue, alt: 'Winter Outfit' },
+  // { src: Banner1, alt: 'Winter Outfit' },
   // { src: MenTrend, alt: 'Winter Outfit' },
-  { src: Banner2, alt: 'Winter Outfit' },
+  // { src: Banner2, alt: 'Winter Outfit' },
   // { src: Kids, alt: 'Winter Outfit' },
 ];
 

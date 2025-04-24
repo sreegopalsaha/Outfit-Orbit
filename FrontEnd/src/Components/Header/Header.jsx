@@ -16,7 +16,7 @@ export default function Header() {
     <>
       <OfferRelatedText/>
       <Headroom>
-      <header className="bg-white shadow-md">
+      <header className="bg-white shadow-md fixed w-full">
         <nav className="flex items-center justify-between py-4 px-6 border-b">
           <Link className="flex items-center">
             <img src='https://img.icons8.com/?size=100&id=pOa8st0SGd5C&format=png&color=000000' alt="Outfit Orbit" className="h-10 w-10"/>
